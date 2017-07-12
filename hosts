@@ -1,0 +1,4 @@
+[servers]
+zesty ansible_ssh_host=127.0.0.1 ansible_ssh_port=2222 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=/home/vnz/work/t/ansible-cron/.vagrant/machines/default/virtualbox/private_key
+[servers:vars]
+ansible_python_interpreter=/usr/bin/python3

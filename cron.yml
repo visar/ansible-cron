@@ -1,0 +1,11 @@
+- name: Test cron
+  hosts: servers
+  become: Yes
+  become_method: sudo
+  tasks:
+    - cron:
+        name: "check dirs"
+        minute: "0"
+        hour: "5,2"
+        job: "ls -alh > /dev/null"
+        user: ubuntu
